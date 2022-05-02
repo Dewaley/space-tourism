@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route,useLocation } from 'react-router
 function App() {
   return (
     <Router>
-      <div className='bg-home-desktop text-white bg-fixed  min-h-screen overflow-x-hidden'>
+      <div className='text-white main-container min-h-screen overflow-x-hidden'>
         <Navbar/>
       </div>
     </Router>

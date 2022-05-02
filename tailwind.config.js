@@ -4,7 +4,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         'home-desktop': "url('../src/images/home/background-home-desktop.jpg')",
-        'footer-texture': "url('/img/footer-texture.png')",
+        'home-tablet': "url('../src/images/home/background-home-tablet.jpg')",
+        'home-mobile': "url('../src/images/home/background-home-mobile.jpg')",
       },
     },
   },
