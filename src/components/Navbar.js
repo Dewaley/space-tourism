@@ -21,7 +21,7 @@ const Nav = () => {
               </Link>
             </li>
             <li>
-              <Link to='/' className='opacity-70 mx-1.5 py-5'>
+              <Link to='/destination' className='opacity-70 mx-1.5 py-5'>
                 <strong className='hidden md:inline-block'>01</strong>
                 Destination
               </Link>
@@ -71,17 +71,17 @@ const Nav = () => {
           </li>
           <li className='my-4 pl-8 text-xl'>
             <Link to='/'>
-              <strong>00</strong>&nbsp;Crew
+              <strong>01</strong>&nbsp;Crew
             </Link>
           </li>
           <li className='my-4 pl-8 text-xl'>
             <Link to='/'>
-              <strong>00</strong>&nbsp;Destination
+              <strong>02</strong>&nbsp;Destination
             </Link>
           </li>
           <li className='my-4 pl-8 text-xl'>
             <Link to='/'>
-              <strong>00</strong>&nbsp;Technology
+              <strong>03</strong>&nbsp;Technology
             </Link>
           </li>
         </ul>

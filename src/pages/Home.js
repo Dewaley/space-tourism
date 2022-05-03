@@ -19,8 +19,8 @@ const Home = () => {
         </div>
         <div>
           <Link
-            to='/'
-            className='h-48 w-48 flex justify-center items-center bg-white text-black uppercase rounded-full hover:text-slate-900'
+            to='/destination'
+            className='h-48 w-48 flex justify-center items-center bg-white text-black uppercase rounded-full hover:text-slate-900 tracking-[.3em]  text-xl'
           >
             Explore
           </Link>

@@ -4,15 +4,26 @@
  background-repeat: no-repeat;
  background-size: cover;
 }
-
+.destination-container {
+ background-image: url('./images/destination/background-destination-mobile.jpg');
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
 @media screen and (min-width:380px) {
  .home-container {
   background-image: url('./images/home/background-home-tablet.jpg');
+ }
+ .destination-container {
+  background-image: url('./images/destination/background-destination-tablet.jpg');
  }
 }
 
 @media screen and (min-width:768px) {
  .home-container {
   background-image: url('./images/home/background-home-desktop.jpg');
+ }
+ .destination-container {
+  background-image: url('./images/destination/background-destination-desktop.jpg');
  }
 }
