@@ -1,4 +1,4 @@
-.main-container {
+.home-container {
  background-image: url('./images/home/background-home-mobile.jpg');
  background-attachment: fixed;
  background-repeat: no-repeat;
@@ -6,13 +6,13 @@
 }
 
 @media screen and (min-width:380px) {
- .main-container {
+ .home-container {
   background-image: url('./images/home/background-home-tablet.jpg');
  }
 }
 
 @media screen and (min-width:768px) {
- .main-container {
+ .home-container {
   background-image: url('./images/home/background-home-desktop.jpg');
  }
 }
