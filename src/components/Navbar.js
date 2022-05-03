@@ -65,22 +65,22 @@ const Nav = () => {
             <img src={close} alt='close' onClick={() => setOpen('closed')} className='cursor-pointer' />
           </div>
           <li className='my-4 pl-8 text-xl'>
-            <Link to='/'>
+            <Link to='/' onClick={()=>setOpen('closed')}>
               <strong>00</strong>&nbsp;Home
             </Link>
           </li>
           <li className='my-4 pl-8 text-xl'>
-            <Link to='/destination'>
+            <Link to='/destination' onClick={()=>setOpen('closed')}>
               <strong>01</strong>&nbsp;Destination
             </Link>
           </li>
           <li className='my-4 pl-8 text-xl'>
-            <Link to='/'>
+            <Link to='/' onClick={()=>setOpen('closed')}>
               <strong>02</strong>&nbsp;Crew
             </Link>
           </li>
           <li className='my-4 pl-8 text-xl'>
-            <Link to='/'>
+            <Link to='/' onClick={()=>setOpen('closed')}>
               <strong>03</strong>&nbsp;Technology
             </Link>
           </li>
