@@ -6,7 +6,7 @@ import Home from './pages/Home';
 function App() {
   return (
     <Router>
-      <div className='min-h-screen overflow-x-hidden text-white'>
+      <div className='min-h-screen overflow-x-hidden text-white font-mono'>
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
