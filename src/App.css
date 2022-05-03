@@ -10,6 +10,18 @@
  background-repeat: no-repeat;
  background-size: cover;
 }
+.spinner {
+ overflow: hidden;
+ animation:  spin 60s infinite linear;
+}
+@keyframes spin {
+ 0%{
+  transform: rotate(0deg);
+ }
+ 0%{
+  transform: rotate(360deg);
+ }
+}
 @media screen and (min-width:380px) {
  .home-container {
   background-image: url('./images/home/background-home-tablet.jpg');

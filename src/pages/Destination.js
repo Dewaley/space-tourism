@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState } from 'react';
 import img_0 from '../images/destination/image-moon.png';
 import img_1 from '../images/destination/image-mars.png';
 import img_2 from '../images/destination/image-europa.png';
@@ -18,8 +18,7 @@ const Destination = ({ destinations }) => {
         return img_0;
     }
   };
-  
-  
+
   return (
     <div className='text-white destination-container min-h-screen overflow-x-hidden flex justify-center items-center'>
       <div className='flex md:justify-end flex-col px-4 md:px-12 pt-28 w-full max-w-lg md:max-w-none'>
@@ -27,8 +26,12 @@ const Destination = ({ destinations }) => {
           <span>0{index + 1}</span>&nbsp; PICK YOUR DESTINATION
         </h1>
         <div className='flex flex-col items-center md:flex-row md:gap-x-2'>
-          <div className='pt-10 md:w-2/4'>
-            <img src={imageIndex(index)} alt='' />
+          <div className='pt-10 md:w-2/4 overflow-hidden'>
+            <img
+              src={imageIndex(index)}
+              alt={destinations[index].name}
+              className='spinner overflow-hidden'
+            />
           </div>
           <div className='flex items-center justify-center flex-col pt-10 text-lg md:w-2/4'>
             <div className='flex gap-x-4'>
