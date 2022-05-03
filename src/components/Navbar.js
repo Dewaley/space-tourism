@@ -70,13 +70,13 @@ const Nav = () => {
             </Link>
           </li>
           <li className='my-4 pl-8 text-xl'>
-            <Link to='/'>
-              <strong>01</strong>&nbsp;Crew
+            <Link to='/destination'>
+              <strong>01</strong>&nbsp;Destination
             </Link>
           </li>
           <li className='my-4 pl-8 text-xl'>
             <Link to='/'>
-              <strong>02</strong>&nbsp;Destination
+              <strong>02</strong>&nbsp;Crew
             </Link>
           </li>
           <li className='my-4 pl-8 text-xl'>
