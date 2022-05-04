@@ -1,41 +1,53 @@
 .home-container {
- background-image: url('./images/home/background-home-mobile.jpg');
- background-attachment: fixed;
- background-repeat: no-repeat;
- background-size: cover;
+  background-image: url('./images/home/background-home-mobile.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .destination-container {
- background-image: url('./images/destination/background-destination-mobile.jpg');
- background-attachment: fixed;
- background-repeat: no-repeat;
- background-size: cover;
+  background-image: url('./images/destination/background-destination-mobile.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.crew-container {
+  background-image: url('./images/crew/background-crew-mobile.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .spinner {
- overflow: hidden;
- animation:  spin 60s infinite linear;
+  overflow: hidden;
+  animation: spin 60s infinite linear;
 }
 @keyframes spin {
- 0%{
-  transform: rotate(0deg);
- }
- 100%{
-  transform: rotate(360deg);
- }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-@media screen and (min-width:380px) {
- .home-container {
-  background-image: url('./images/home/background-home-tablet.jpg');
- }
- .destination-container {
-  background-image: url('./images/destination/background-destination-tablet.jpg');
- }
+@media screen and (min-width: 380px) {
+  .home-container {
+    background-image: url('./images/home/background-home-tablet.jpg');
+  }
+  .destination-container {
+    background-image: url('./images/destination/background-destination-tablet.jpg');
+  }
+  .crew-container {
+   background-image: url('./images/crew/background-crew-tablet.jpg');
+  }
 }
 
-@media screen and (min-width:768px) {
- .home-container {
-  background-image: url('./images/home/background-home-desktop.jpg');
- }
- .destination-container {
-  background-image: url('./images/destination/background-destination-desktop.jpg');
- }
+@media screen and (min-width: 768px) {
+  .home-container {
+    background-image: url('./images/home/background-home-desktop.jpg');
+  }
+  .destination-container {
+    background-image: url('./images/destination/background-destination-desktop.jpg');
+  }
+  .crew-container {
+   background-image: url('./images/crew/background-crew-desktop.jpg');
+  }
 }

@@ -23,9 +23,9 @@ const Destination = ({ destinations }) => {
     <div className='text-white destination-container min-h-screen overflow-x-hidden flex justify-center items-center'>
       <div className='flex md:justify-end flex-col px-4 md:px-12 pt-28 w-full max-w-lg md:max-w-none'>
         <h1 className='tracking-widest'>
-          <span>0{index + 1}</span>&nbsp; PICK YOUR DESTINATION
+          <span>01</span>&nbsp; PICK YOUR DESTINATION
         </h1>
-        <div className='flex flex-col items-center md:flex-row md:gap-x-2'>
+        <div className='flex flex-col items-center md:flex-row md:gap-x-2 pb-4'>
           <div className='pt-10 md:w-2/4 overflow-hidden'>
             <img
               src={imageIndex(index)}

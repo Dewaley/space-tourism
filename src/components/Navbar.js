@@ -27,7 +27,7 @@ const Nav = () => {
               </Link>
             </li>
             <li>
-              <Link to='/' className='opacity-70 mx-1.5 py-5'>
+              <Link to='/crew' className='opacity-70 mx-1.5 py-5'>
                 <strong className='hidden md:inline-block'>02</strong>Crew
               </Link>
             </li>
@@ -75,7 +75,7 @@ const Nav = () => {
             </Link>
           </li>
           <li className='my-4 pl-8 text-xl'>
-            <Link to='/' onClick={()=>setOpen('closed')}>
+            <Link to='/crew' onClick={()=>setOpen('closed')}>
               <strong>02</strong>&nbsp;Crew
             </Link>
           </li>
