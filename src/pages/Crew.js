@@ -31,7 +31,7 @@ const Crew = ({ crew }) => {
           <span className='text-gray-600'>02</span>&nbsp; MEET YOUR CREW
         </h1>
         <div className='flex flex-col md:flex-row md:items-center'>
-          <div className='order-2 mt-4 text-center md:text-left md:w-2/4 md:order-1'>
+          <div className='order-2 my-4 text-center md:text-left md:w-2/4 md:order-1'>
             <h1 className='text-gray-600 uppercase text-2xl md-text-3xl'>
               {crew[index].role}
             </h1>
