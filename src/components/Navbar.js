@@ -7,10 +7,12 @@ import close from '../images/shared/icon-close.svg';
 const Nav = () => {
   const [open, setOpen] = useState('closed');
   return (
-    <div className='relative'>
+    <div className='relative z-50'>
       <header className='flex items-center fixed w-full text-white mt-5 justify-between overflow-x-hidden max-w-screen'>
         <div className='sm:w-2/4 flex items-center relative pl-8'>
-          <img src={logo} alt='logo' className='w-8' />
+          <Link to='/'>
+            <img src={logo} alt='logo' className='w-8' />
+          </Link>
           <hr className='w-10/12 -right-4 absolute z-50 hidden md:block' />
         </div>
         <nav className='sm:w-2/4  backdrop-blur-md bg-[#111827]/20 opacity-80 hidden sm:block'>
@@ -52,7 +54,7 @@ const Nav = () => {
         </div>
       </header>
       <div
-        className={`sm:hidden fixed top-0 h-screen backdrop-blur-md bg-[#111827]/20 opacity-80 right-0 z-50 transition-[width] duration-500 ${
+        className={`sm:hidden fixed top-0 h-screen backdrop-blur-md bg-[#111827]/20 opacity-80 right-0 z-40 transition-[width] duration-500 ${
           open === 'closed' ? 'w-0' : 'w-[60vw]'
         }`}
       >
@@ -62,25 +64,30 @@ const Nav = () => {
               open === 'closed' ? 'hidden -right-8' : 'right-8 block'
             }}`}
           >
-            <img src={close} alt='close' onClick={() => setOpen('closed')} className='cursor-pointer' />
+            <img
+              src={close}
+              alt='close'
+              onClick={() => setOpen('closed')}
+              className='cursor-pointer'
+            />
           </div>
           <li className='my-4 pl-8 text-xl'>
-            <Link to='/' onClick={()=>setOpen('closed')}>
+            <Link to='/' onClick={() => setOpen('closed')}>
               <strong>00</strong>&nbsp;Home
             </Link>
           </li>
           <li className='my-4 pl-8 text-xl'>
-            <Link to='/destination' onClick={()=>setOpen('closed')}>
+            <Link to='/destination' onClick={() => setOpen('closed')}>
               <strong>01</strong>&nbsp;Destination
             </Link>
           </li>
           <li className='my-4 pl-8 text-xl'>
-            <Link to='/crew' onClick={()=>setOpen('closed')}>
+            <Link to='/crew' onClick={() => setOpen('closed')}>
               <strong>02</strong>&nbsp;Crew
             </Link>
           </li>
           <li className='my-4 pl-8 text-xl'>
-            <Link to='/technology' onClick={()=>setOpen('closed')}>
+            <Link to='/technology' onClick={() => setOpen('closed')}>
               <strong>03</strong>&nbsp;Technology
             </Link>
           </li>
