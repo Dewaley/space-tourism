@@ -25,7 +25,7 @@ const Technology = ({ technology }) => {
     <div className='text-white tech-container min-h-screen overflow-x-hidden md:flex md:justify-center md:items-center'>
       <div className='pt-28 px-[5vw]'>
         <h1 className='tracking-widest pb-8'>
-          <span className='text-gray-600'>02</span>&nbsp; MEET YOUR technology
+          <span className='text-gray-600'>03</span>&nbsp; SPACE LAUNCH 101
         </h1>
         <div className='flex flex-col md:flex-row md:items-center'>
           <div className='order-2 my-4 text-center md:text-left md:w-7/12 flex flex-col md:flex-row md:order-1'>
