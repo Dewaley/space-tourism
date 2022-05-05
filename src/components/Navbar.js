@@ -52,7 +52,7 @@ const Nav = () => {
         </div>
       </header>
       <div
-        className={`sm:hidden absolute h-screen backdrop-blur-md bg-[#111827]/20 opacity-80 right-0 z-50 transition-[width] duration-500 ${
+        className={`sm:hidden fixed top-0 h-screen backdrop-blur-md bg-[#111827]/20 opacity-80 right-0 z-50 transition-[width] duration-500 ${
           open === 'closed' ? 'w-0' : 'w-[60vw]'
         }`}
       >
