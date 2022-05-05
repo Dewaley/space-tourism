@@ -31,42 +31,54 @@ const Crew = ({ crew }) => {
           <span className='text-gray-600'>02</span>&nbsp; MEET YOUR CREW
         </h1>
         <div className='flex flex-col md:flex-row md:items-center'>
-          <div className='order-2 my-4 text-center md:text-left md:w-2/4 md:order-1'>
-            <h1 className='text-gray-600 uppercase text-2xl md-text-3xl'>
-              {crew[index].role}
-            </h1>
-            <h1 className='text-3xl uppercase md:text-4xl my-4'>
-              {crew[index].name}
-            </h1>
-            <p className='text-gray-500 md:max-w-md md:text-left text-center'>{crew[index].bio}</p>
-            <div className='flex justify-center items-center gap-x-8 mt-8'>
+          <div className='order-2 my-4 text-center md:text-left md:w-2/4 flex flex-col md:order-1'>
+            <div className='order-2 md:order-1'>
+              <h1 className='text-gray-600 uppercase text-2xl md-text-3xl'>
+                {crew[index].role}
+              </h1>
+              <h1 className='text-3xl uppercase md:text-4xl my-4'>
+                {crew[index].name}
+              </h1>
+              <p className='text-gray-500 md:max-w-md md:text-left text-center'>
+                {crew[index].bio}
+              </p>
+            </div>
+            <div className='flex justify-center items-center gap-x-8 my-4 order-1 md:order-2'>
               <span
                 onClick={() => {
                   goToTop();
                   setIndex(0);
                 }}
-                className={`cursor-pointer h-4 w-4 border-2 rounded-full ${index === 0 && 'bg-white'}`}
+                className={`cursor-pointer h-4 w-4 border-2 rounded-full ${
+                  index === 0 && 'bg-white'
+                }`}
               ></span>
               <span
                 onClick={() => {
                   goToTop();
                   setIndex(1);
                 }}
-                className={`cursor-pointer h-4 w-4 border-2 rounded-full ${index === 1 && 'bg-white'}`}
+                className={`cursor-pointer h-4 w-4 border-2 rounded-full ${
+                  index === 1 && 'bg-white'
+                }`}
               ></span>
               <span
                 onClick={() => {
                   goToTop();
                   setIndex(2);
                 }}
-                className={`cursor-pointer h-4 w-4 border-2 rounded-full ${index === 2 && 'bg-white'}`}
+                className={`cursor-pointer h-4 w-4 border-2 rounded-full ${
+                  index === 2 && 'bg-white'
+                }`}
               ></span>
               <span
                 onClick={() => {
                   goToTop();
                   setIndex(3);
                 }}
-                className={`cursor-pointer h-4 w-4 border-2 rounded-full ${index === 3 && 'bg-white'}`}
+                className={`cursor-pointer h-4 w-4 border-2 rounded-full ${
+                  index === 3 && 'bg-white'
+                }`}
               ></span>
             </div>
           </div>
