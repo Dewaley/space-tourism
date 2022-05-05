@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import Destination from './pages/Destination';
 import Crew from './pages/Crew';
+import Technology from './pages/Technology';
 import data from './data';
 
 function App() {
@@ -17,10 +18,8 @@ function App() {
             path='/destination'
             element={<Destination destinations={data.destinations} />}
           />
-          <Route
-            path='/crew'
-            element={<Crew crew={data.crew} />}
-          />
+          <Route path='/crew' element={<Crew crew={data.crew} />} />
+          <Route path='/technology' element={<Technology technology={data.technology} />} />
         </Routes>
       </div>
     </Router>

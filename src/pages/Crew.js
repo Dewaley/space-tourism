@@ -38,7 +38,7 @@ const Crew = ({ crew }) => {
             <h1 className='text-3xl uppercase md:text-4xl my-4'>
               {crew[index].name}
             </h1>
-            <p className='text-gray-500 max-w-md'>{crew[index].bio}</p>
+            <p className='text-gray-500 md:max-w-md md:text-left text-center'>{crew[index].bio}</p>
             <div className='flex justify-center items-center gap-x-8 mt-8'>
               <span
                 onClick={() => {
@@ -70,8 +70,8 @@ const Crew = ({ crew }) => {
               ></span>
             </div>
           </div>
-          <div className='order-1 md:w-2/4 md:order-2 flex justify-center items-center'>
-            <img src={imageIndex(index)} alt='' className='h-[80vh]' />
+          <div className='order-1 md:w-2/4 md:order-2 flex justify-center items-center overflow-y-hidden'>
+            <img src={imageIndex(index)} alt='' className='max-w-xs' />
           </div>
         </div>
       </div>
