@@ -31,7 +31,7 @@ const Technology = ({ technology }) => {
           <div className='order-2 my-4 text-center md:text-left md:w-7/12 flex flex-col md:flex-row md:order-1'>
             <div className='order-2'>
               <h1 className='text-gray-600 uppercase text-2xl md-text-3xl'>
-                The technology...
+                The terminology...
               </h1>
               <h1 className='text-3xl uppercase md:text-4xl my-4'>
                 {technology[index].name}
